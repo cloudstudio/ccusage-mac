@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Claude Usage Details</title>
+  <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>
+        <img src="assets/claude.png" alt="Claude" class="claude-logo">
+        Claude Usage Monitor
+      </h1>
+      <div class="live-indicator">
+        <div class="live-dot"></div>
+        <span>Live Mode</span>
+        <button class="refresh-btn" id="refresh-btn">Refresh</button>
+      </div>
+    </div>
+    
+    <div class="period-selector">
+      <button class="period-btn" data-period="7days">Last 7 Days</button>
+      <button class="period-btn" data-period="daily">Daily</button>
+      <button class="period-btn active" data-period="month">Last Month</button>
+      <button class="period-btn" data-period="total">All Time</button>
+    </div>
+    
+    <div id="content">
+      <div class="loading">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 8px; animation: spin 1s linear infinite;">
+          <circle cx="12" cy="12" r="10" fill="#ff6b35"/>
+          <text x="12" y="16" font-family="Arial" font-size="10" font-weight="bold" text-anchor="middle" fill="white">C</text>
+        </svg>
+        <div>Loading usage data...</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./renderer.js"></script>
+</body>
+</html>
