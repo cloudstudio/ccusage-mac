@@ -45,8 +45,8 @@ For more information about ccusage, visit: https://github.com/ryoppippi/ccusage
 
 ```bash
 # Clone the repository
-git clone <your-repository>
-cd mac-claude-usage
+git clone https://github.com/cloudstudio/ccusage-mac.git
+cd ccusage-mac
 
 # Install dependencies
 yarn install
@@ -100,7 +100,7 @@ this.currentPeriod = 'month'; // Options: 'daily', '7days', 'month', 'total'
 ### Project Structure
 
 ```
-mac-claude-usage/
+ccusage-mac/
 ├── src/
 │   ├── main.js              # Electron main process
 │   ├── preload.js           # Preload script for secure communication
@@ -148,7 +148,7 @@ MIT License - You can use, modify and distribute this project freely.
 
 ## 🤝 Contributing
 
-1. Fork the project
+1. Fork the project at https://github.com/cloudstudio/ccusage-mac
 2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
 3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the branch (`git push origin feature/AmazingFeature`)
@@ -159,7 +159,7 @@ MIT License - You can use, modify and distribute this project freely.
 If you encounter any issues or have suggestions, please:
 1. Review the Troubleshooting section
 2. Run `yarn dev` to see debug logs
-3. Create an issue in the repository with problem details
+3. Create an issue at https://github.com/cloudstudio/ccusage-mac/issues with problem details
 
 ---
 
